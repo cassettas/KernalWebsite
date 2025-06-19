@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Artist Name | Releases</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Faint glow effect for ASCII title */
+        #ascii-title {
+            text-shadow:
+                0 0 6px #b4b4b4,
+                0 0 12px rgb(75, 75, 80),
+                0 0 18px rgb(40, 40, 42);
+        }
+    </style>
+</head>
+<body>
+    <div id="dither-bg"></div>
+    <div class="content">
+        <header>
+            <h1>
+                <pre id="ascii-title"></pre>
+            </h1>
+            <h2>kernal soup®</h2>
+        </header>
+        <main>
+            <section id="releases">
+                <h3>Releases</h3>
+                <!-- Releases table will be generated here -->
+                <div id="releases-table"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 FOURWALLJAMS</p>
+        </footer>
+        <div class="mgmt-email-footer">
+            <a href="mailto:notkanakis@gmail.com" style="color: inherit; text-decoration: underline;">mgmt: notkanakis@gmail.com</a>
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            renderAsciiTitle('WELCOME');
+            generateReleasesTable();
+        });
+    </script>
+</body>
+</html>
