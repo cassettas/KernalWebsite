@@ -1,4 +1,5 @@
-// Releases data for the artist
+const WelcomeMessage = "WELCOME";
+
 const releases = [
     {
         title: "call u mine",

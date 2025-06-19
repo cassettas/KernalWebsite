@@ -2,17 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Kernal soup's online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kernal soup</title>
+    <meta name="description" content="Kernal soup® - A collection of releases by FOURWALLJAMS">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="icon" href="favicon/android-chrome-192x192.png" sizes="192x192" type="image/png" media="(max-width: 768px)">
+    <link rel="icon" href="favicon/android-chrome-512x512.png" sizes="512x512" type="image/png" media="(min-width: 769px)">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Faint glow effect for ASCII title */
-        #ascii-title {
-            text-shadow:
-                0 0 6px #b4b4b4,
-                0 0 12px rgb(75, 75, 80),
-                0 0 18px rgb(40, 40, 42);
-        }
-    </style>
 </head>
 <body>
     <div id="dither-bg"></div>
@@ -26,12 +26,11 @@
         <main>
             <section id="releases">
                 <h3>Releases</h3>
-                <!-- Releases table will be generated here -->
                 <div id="releases-table"></div>
             </section>
         </main>
         <footer>
-            <p>&copy; 2025 FOURWALLJAMS</p>
+            <p>&copy; <span id="current-year"></span> FOURWALLJAMS</p>
         </footer>
         <div class="mgmt-email-footer">
             <a href="mailto:notkanakis@gmail.com" style="color: inherit; text-decoration: underline;">mgmt: notkanakis@gmail.com</a>
@@ -40,10 +39,6 @@
     <script src="config.js"></script>
     <script src="script.js"></script>
     <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            renderAsciiTitle('WELCOME');
-            generateReleasesTable();
-        });
     </script>
 </body>
 </html>

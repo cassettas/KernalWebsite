@@ -34,6 +34,13 @@ main {
     margin-top: 2rem;
 }
 
+#ascii-title {
+    text-shadow:
+        0 0 6px #b4b4b4,
+        0 0 12px rgb(75, 75, 80),
+        0 0 18px rgb(40, 40, 42);
+}
+
 #releases {
     width: 100%;
     max-width: 500px;
@@ -61,6 +68,10 @@ main {
     font-family: inherit;
     font-weight: 300;
     letter-spacing: 1px;
+}
+
+#releases table {
+    table-layout: auto; /* Ensure table respects cell padding */
 }
 
 #releases li {
@@ -139,6 +150,7 @@ footer {
     text-decoration: none;
     transition: color 0.2s;
 }
+
 .release-link:hover, .release-link:focus {
     color: #ff2222;
 }
@@ -147,6 +159,7 @@ footer {
     position: relative;
     display: inline-block;
 }
+
 .pulse-canvas {
     position: fixed;
     left: 0; top: 0;
@@ -155,3 +168,6 @@ footer {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+  body { padding: 1rem; }
+}
